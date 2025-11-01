@@ -1,0 +1,86 @@
+Efficiency in Order: A Comparative Visualization of Sorting Algorithms for Enhanced Algorithmic Understanding
+
+Algorithms, Data Visualization
+
+Create a program that visualizes various sorting algorithms like Bubble Sort, Merge Sort, Quick Sort, etc. This project will help you understand and compare the efficiency of different sorting algorithms.
+
+Web development tools (e.g., text editor), web browser
+
+Web development frameworks (e.g., React, Vue), visualization libraries
+
+Help users understand how various sorting algorithms work and their differences
+
+
+Help users understand how various sorting algorithms work and their differences
+
+Help users understand how various sorting algorithms work and their differences.[using python and its libraries]
+
+I'll create a short todo list, then add a Streamlit-based Python app plus helper modules to visualize multiple sorting algorithms, and finally run a quick syntax check. Expected outcome: new files added and a basic sanity check passed. I'll start by writing the todo list.
+
+Created 5 todos
+
+Created algorithms.py
+
+Created app.py
+
+Created requirements.txt
+
+Created README.md
+
+
+python -m py_compile "c:\Users\Mavis\.vscode\School\DAA\Project\algorithms.py" "c:\Users\Mavis\.vscode\School\DAA\Project\app.py"
+
+Now I'll mark the todo items as completed for the work I just did. Expected outcome: updated todo statuses.
+
+Completed (1/5) Project scaffold
+
+Progress update — what I did
+
+Created a small Streamlit-based sorting visualizer (Python) and helper module.
+
+Created a small Streamlit-based sorting visualizer (Python) and helper module.
+Implemented generator-style sorting algorithms that yield snapshots: Bubble, Selection, Insertion, Merge, Quick (in algorithms.py).
+Built a Streamlit UI (app.py) with controls: algorithm, array size, speed, randomize, Start/Stop/Step.
+Added requirements.txt and README.md.
+Ran a quick syntax/compile check on the new files.
+Files added (location: c:\Users\Mavis.vscode\School\DAA\Project)
+
+algorithms.py — sorting algorithms that yield visualization snapshots; helper random_array.
+app.py — Streamlit application that animates snapshots with matplotlib bar charts and provides controls.
+Files added (location: c:\Users\Mavis.vscode\School\DAA\Project)
+
+algorithms.py — sorting algorithms that yield visualization snapshots; helper random_array.
+app.py — Streamlit application that animates snapshots with matplotlib bar charts and provides controls.
+requirements.txt — streamlit, numpy, matplotlib.
+README.md — run instructions and notes.
+How to run (short)
+How to run (short)
+
+Create & activate a venv (PowerShell):
+Install dependencies:
+Start the app:
+Notes, verifications, and caveats
+
+I ran a quick Python compile check for syntax; the source modules are syntactically valid.
+The Streamlit app imports streamlit, numpy, and matplotlib; they must be installed (see requirements).
+
+Notes, verifications, and caveats
+
+I ran a quick Python compile check for syntax; the source modules are syntactically valid.
+The Streamlit app imports streamlit, numpy, and matplotlib; they must be installed (see requirements).
+The visualizer uses generator snapshots; for Merge and Quick I implemented approaches that yield intermediate states. Quick sort is implemented using an explicit stack (iterative) to simplify yielding snapshots deterministically.
+The UI is intentionally simple for education and comparison. It shows active indices (red) and sorted indices (green).
+
+Suggested next improvements (I can implement any of these)
+
+Add swap/comparison counters shown live.
+Add more algorithms: Heap sort, Shell sort, TimSort.
+Allow saving/exporting animations or step logs.
+Add color/legend and tooltips for education (explain steps).
+Add unit tests validating that each algorithm yields a final sorted array and that generators behave properly.
+If you want, I can:
+
+Install additional algorithms (Heap, Shell).
+Add counters (comparisons/swaps).
+Add a demo GIF builder or export for slides.
+Make the UI fancier (play/pause/seek bar, reversed stepping).
